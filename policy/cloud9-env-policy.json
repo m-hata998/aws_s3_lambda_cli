@@ -1,0 +1,131 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeVolumesModifications",
+                "lambda:ListFunctions"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "ec2:ModifyVolume",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateGrant",
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:GenerateDataKey"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:AddPermission",
+                "lambda:CreateFunction",
+                "lambda:DeleteFunction",
+                "lambda:GetFunctionConfiguration",
+                "lambda:GetPolicy",
+                "lambda:RemovePermission",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:InvokeFunction"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteBucket",
+                "s3:GetBucketLocation",
+                "s3:GetBucketNotification",
+                "s3:PutBucketNotification",
+                "s3:CreateBucket",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr:GetRepositoryPolicy",
+                "ecr:SetRepositoryPolicy",
+                "ecr:ListImages",
+                "ecr:DescribeRepositories",
+                "ecr:CreateRepository",
+                "ecr:BatchDeleteImage",
+                "ecr:DeleteRepository",
+                "ecr:GetAuthorizationToken",
+                "ecr:InitiateLayerUpload",
+                "ecr:UploadLayerPart",
+                "ecr:CompleteLayerUpload",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:PutImage"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:CreateDatabase",
+                "glue:CreateTable",
+                "glue:DeleteDatabase",
+                "glue:DeleteTable",
+                "glue:GetDatabases",
+                "glue:GetTables",
+                "glue:GetTable"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "athena:CreateWorkGroup",
+                "athena:ListDatabases",
+                "athena:ListTableMetadata",
+                "athena:ListWorkGroups",
+                "athena:GetQueryResults",
+                "athena:DeleteWorkGroup",
+                "athena:StartQueryExecution"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:DescribeLogGroups",
+                "logs:CreateLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:DeleteLogGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListRoles",
+                "iam:CreateRole",
+                "iam:ListPolicies",
+                "iam:CreatePolicy",
+                "iam:AttachRolePolicy",
+                "iam:ListAttachedRolePolicies",
+                "iam:DetachRolePolicy",
+                "iam:DeletePolicy",
+                "iam:DeleteRole",
+                "iam:GetRole",
+                "iam:PassRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
