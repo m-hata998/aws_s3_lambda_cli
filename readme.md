@@ -10,7 +10,7 @@ Cloud9環境にて操作する前提です。
 ### Cloud9環境作成
 
 - マネジメントコンソールからCloud9を検索・選択
-- [CreateEnviroment]を押下（右上のリージョンが、今回の利用対象になっていることを確認）
+- [CreateEnviroment]を押下（右上のリージョンが、今回の利用対象[手順書通りであればオレゴン]になっていることを確認）
 - Nameに任意の名前を入力して[Next]を押下
 - Instance type：Other instance typeから[t3.medium]を選択（今回はdockerでメモリを使用するので少し大きめ）
 - Network Settingを、パブリックのネットワークが存在するVPCに変更（defaultでもOKですがAZによってはインスタンスの作成時にエラーになるかも）

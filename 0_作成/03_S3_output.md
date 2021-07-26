@@ -24,7 +24,6 @@ Raspberry piからのoutput用にS3バケットを作成します。
 
 ### 1.2. リージョン指定
 
-    # S3_BUCKET_LOCATION="ap-northeast-1"
     S3_BUCKET_LOCATION="us-west-2"
 
 ## 2. メインの処理

@@ -8,7 +8,6 @@ Lambdaの関数にトリガーを追加します。
 
 ### 1.1. リージョンの指定
 
-    # export AWS_DEFAULT_REGION='ap-northeast-1'
     export AWS_DEFAULT_REGION='us-west-2'
 
 ### 1.2. S3バケット名
