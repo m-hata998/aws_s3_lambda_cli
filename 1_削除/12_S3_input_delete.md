@@ -1,7 +1,6 @@
 <!-- omit in toc -->
 # S3のオブジェクト削除(input)
 
-※動作確認済  
 Raspberry piからのinput用に作成したS3バケットを削除します。
 
 ## 1. 変数の指定

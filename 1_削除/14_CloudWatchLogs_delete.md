@@ -1,7 +1,6 @@
 <!-- omit in toc -->
 # CloudWatch Logsのロググループ削除
 
-※動作確認済  
 CloudWatch Logsのロググループを削除します。
 
 ## 1. 変数の指定
