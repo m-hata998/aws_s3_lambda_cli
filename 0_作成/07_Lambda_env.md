@@ -32,7 +32,7 @@ Lambdaの関数に環境変数（YOLO５の実行結果出力先）を作成し�
 
 ### 1.4. 環境変数の設定値
 
-    STRING_LAMBDA_FUNCTION_ENVIRONMENT="Variables={OUTPUT_BUCKET=${S3_BUCKET_NAME},OUTPUTJSON_PATH='json',OUTPUT_PATH='image'}"
+    STRING_LAMBDA_FUNCTION_ENVIRONMENT="Variables={OUTPUT_BUCKET=${S3_BUCKET_NAME}}"
 
 ## 2. メインの処理
 
