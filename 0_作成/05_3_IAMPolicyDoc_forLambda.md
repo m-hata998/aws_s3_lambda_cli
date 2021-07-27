@@ -5,21 +5,17 @@ Lambda関数に付与するポリシードキュメントを作成します。
 
 ## 1. 変数の指定
 
-### 1.1. リージョン指定
-
-    export AWS_DEFAULT_REGION='us-west-2'
-
-### 1.2. ディレクトリ指定
+### 1.1. ディレクトリ指定
 
     DIR_IAM_POLICY_DOC="${HOME}/environment/conf-lambda"
 
-### 1.3. ドキュメント名
+### 1.2. ドキュメント名
 
     IAM_POLICY_DOC_NAME='internship-lambda-policy'
     FILE_IAM_POLICY_DOC="${DIR_IAM_POLICY_DOC}/${IAM_POLICY_DOC_NAME}.json" \
         && echo ${FILE_IAM_POLICY_DOC}
 
-### 1.4. AWSID
+### 1.3. AWSID
 
     AWS_ID=$( \
         aws sts get-caller-identity \
@@ -28,13 +24,13 @@ Lambda関数に付与するポリシードキュメントを作成します。
     ) \
     && echo ${AWS_ID}
 
-### 1.5. ロググループ名
+### 1.4. ロググループ名
 
     ORIGINFILEPATH='/home/ec2-user/environment/originname'
     ORIGINNAME=`cat ${ORIGINFILEPATH}`
     LOGS_GROUP_NAME='/aws/lambda/internship-yolo5'-${ORIGINNAME}
 
-### 1.6. S3バケット名
+### 1.5. S3バケット名
 
     S3_BUCKET_INPUT_PREFIX='raspberrypi-input'
     S3_BUCKET_INPUT_NAME="${S3_BUCKET_INPUT_PREFIX}-${AWS_ID}-${ORIGINNAME}" \
